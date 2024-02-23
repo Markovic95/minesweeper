@@ -554,13 +554,20 @@ final class GUI_Grid extends JPanel {
             // decrements valid counter
             validcounterremove(row, col);
 
-            // increments mines
+            /**
+             * increments mines
+             *  */ 
             mins++;
 
-            // Sets the flag as flag counter
+            /**
+             * Sets the flag as flag counter
+             * */ 
             FlagS.setText("Flags " + String.valueOf(flagcounter));
 
-            // Sets the mines as mines
+            /**
+             * Sets the mines as mines
+             * 
+             * */ 
             narkes.setText("Mines:" + String.valueOf(mins));
 
         }
