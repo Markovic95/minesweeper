@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>8</y>
+      <w>496</w>
+      <h>832</h>
+    </coordinates>
+    <panel_attributes>minesweeper::GUI_Grid
+--
++minecount: int
++x: int
++y: int
++mins: int
+~gameOver = false: boolean
+~lifecounter = 3: int
+~flagcounter = 0: int
+~minecounter = 0: int
+~button: JButton[][]
+~mines: char[][]
+~background = new Color(236, 236, 236): Color
+~defaultBg = new JButton().getBackground(): Color
++mine: String
++logic_grid: Logic_Grid
+-status: JPanel
+-status2: JPanel
+-time, live, narkes, FlagS: JLabel
+-timer: Timer
+-secs = 0: int
+-seconds = 0: int
+-min = 0: int
+-validatecounter = 0: int
+-indexer, trueminecount = 0: int
+-invalid = 0: int
+-facingdowncount = 0: int
+-facingdown = 0: int
+~icon0 = new ImageIcon((getClass().getResource("/images/0.png"))): ImageIcon
+~icon1 = new ImageIcon((getClass().getResource("/images/1.png"))): ImageIcon
+~icon2 = new ImageIcon((getClass().getResource("/images/2.png"))): ImageIcon
+~icon3 = new ImageIcon((getClass().getResource("/images/3.png"))): ImageIcon
+~icon4 = new ImageIcon((getClass().getResource("/images/4.png"))): ImageIcon
+~icon5 = new ImageIcon((getClass().getResource("/images/5.png"))): ImageIcon
+~icon6 = new ImageIcon((getClass().getResource("/images/6.png"))): ImageIcon
+~icon7 = new ImageIcon((getClass().getResource("/images/7.png"))): ImageIcon
+~icon8 = new ImageIcon((getClass().getResource("/images/8.png"))): ImageIcon
+~bomb = new ImageIcon((getClass().getResource("/images/bomb.png"))): ImageIcon
+~facingDown = new ImageIcon((getClass().getResource("/images/facingDown.png"))): ImageIcon
+~flagged = new ImageIcon((getClass().getResource("/images/flagged.png"))): ImageIcon
+~icontable[] = new ImageIcon[10]: ImageIcon
+--
++GUI_Grid(int x, int y, int mines): ctor
++icontable(): void
++initialize(int x, int y, int mines): void
++keeptime(): void
++mineindexervalue(): void
++facingdownmeter(): void
++facingblank(): void
++invalidcounteradd(int x, int y): void
++invalidcounterremove(int x, int y): void
++validcounteradd(int x, int y): void
++validcounterremove(int x, int y): void
++show_neighbors(int row, int col): void
++narkes(): void
++emptycell(int row, int col): void
++win_end(): void
++setneighbors(int row, int col): void
++set_unset_flag(int row, int col): void
++highScores(String dif, String name, int score): void
++saveToFile(ArrayList&lt;String&gt; scores): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>0</y>
+      <w>432</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>minesweeper::Logic_Grid
+--
+-width: int
+-height: int
+-mineCount: int
+-index = 0: int
+~flag = new ImageIcon((getClass().getResource("/images/flagged.png"))): ImageIcon
++mine = 'B': char
+-logic_grid: char[][]
+--
++Logic_Grid(int x, int y, int mins): ctor
++getWidth(): int
++getHeight(): int
++neighborsOfMines(int row, int col): int
++border(int row, int col): boolean
++numOfneighbors(int row, int col): String
++set_reset(): void
++valueofcell(int row, int col, char piece): boolean
++getMine(): char
++getFlag(): ImageIcon
++getmines(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>944</x>
+      <y>0</y>
+      <w>248</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>minesweeper::MineGrid
+--
+-menubar: JMenuBar
+-gridpanel: JPanel
+-Game: JMenu
+-Scores: JButton
+-New: JMenuItem
+~rows: int
+~columns: int
+~mines: int
+~StartMenu: JFrame
+~board: Logic_Grid
+-Mines: int
+-X: int
+-Y: int
+--
++MineGrid(int rows, int columns, int mines): ctor
++initCompo(int x, int y, int mines): void
++actionPerformed(ActionEvent e): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>840</y>
+      <w>376</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>minesweeper::StartMenu
+--
+-b2: JButton
+-b: JButton
+-b3: JButton
+-input, defaultvaluespanel, toppanel, southpanel, subsouthpanel: JPanel
+-startlabel, defaultlabel: JLabel
+--
++StartMenu(): ctor
+-initComponents(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>840</y>
+      <w>280</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>minesweeper::StartGameAction
+--
+-startMenu: JFrame
+-game: JFrame
+--
++StartGameAction(JFrame page, JFrame game): ctor
++actionPerformed(ActionEvent e): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>840</y>
+      <w>160</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>minesweeper::MineSweeper
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

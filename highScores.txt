@@ -1,0 +1,15 @@
+Easy:dali:22
+Easy:kwstas:30
+Easy:maria:36
+Easy:kalia:34
+Easy:dalibor:40
+Easy:dalibor:30
+Medium:dalibor:112
+Medium:dalibor:131
+Easy:null:33
+Easy:dalibor:29
+Easy:null:28
+Easy:dalibor:19
+Easy:null:80
+Easy:dalibor_markovic:30
+Medium:dalibor-markovic:120
