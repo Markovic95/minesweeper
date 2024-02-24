@@ -13,3 +13,5 @@ Easy:dalibor:19
 Easy:null:80
 Easy:dalibor_markovic:30
 Medium:dalibor-markovic:120
+Easy:dali:21
+Easy:sia:74

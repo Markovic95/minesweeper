@@ -703,11 +703,14 @@ final class GUI_Grid extends JPanel {
      * @param dif, difficulty of the game
      * @param name, name of player
      * @param score, time taken to win
+     * @param filepath, file destination to append new win records
      */
     public void highScores(String dif, String name, int score) {
         System.out.println(dif + " " + " " + name + " " + score);
-        String filepath = "C:\\Users\\Dalib\\Documents\\MEGA\\JAVA(ERG)\\JAVADIR\\n" + //
-                        "etbeans\\PROJECTS\\MineSweeper versions\\mine_ver1.0\\minesweeper\\highScores.txt";
+        /**
+         * change filepath String to be your destination based on where the highScores.txt is located or feel free to change the code!
+         */
+        String filepath = "C:\\Users\\Dalib\\Documents\\GitRepository\\minesweeper\\minesweeper\\highScores.txt";
 
         //################
         FileReader myFileread = null;
