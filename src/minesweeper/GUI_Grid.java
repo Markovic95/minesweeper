@@ -710,7 +710,7 @@ final class GUI_Grid extends JPanel {
         /**
          * change filepath String to be your destination based on where the highScores.txt is located or feel free to change the code!
          */
-        String filepath = "C:\\Users\\Dalib\\Documents\\GitRepository\\minesweeper\\minesweeper\\highScores.txt";
+        String filepath = "./highScores.txt";
 
         //################
         FileReader myFileread = null;
