@@ -1,9 +1,13 @@
 Easy:dalibor:23
 Medium:kwstas:141
 Hard:markovvic:8
-Hard:asimina:5
 Easy:awdawd:26
 Easy:adw:27
 Easy:dalibor:18
 Easy:dawd:28
 Easy:dalib:19
+Medium:dali:120
+Easy::35
+Easy:dalibot:21
+Easy:dalibor:27
+Easy:dalibor:15
