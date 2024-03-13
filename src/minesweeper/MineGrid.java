@@ -7,6 +7,7 @@ package minesweeper;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.HeadlessException;
@@ -37,6 +38,7 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 import javax.swing.Timer;
 import java.util.*;
 
@@ -170,10 +172,18 @@ public final class MineGrid extends JFrame implements ActionListener {
                     // arr.forEach(line -> System.out.println(line));
 
                     JDialog popupMenu = new JDialog(StartMenu);
-                    popupMenu.setSize(new Dimension(250, 100));
+                    JPanel flow = new JPanel(new FlowLayout());
+                    popupMenu.setSize(new Dimension(250, 170));
                     popupMenu.setLayout(new BorderLayout());
+                    popupMenu.add(flow,BorderLayout.CENTER);
                     popupMenu.setLocationRelativeTo(StartMenu);
+
                     JButton close = new JButton("Close");
+                    JLabel title = new JLabel("Fastest Sweeps");
+                    title.setFont(new Font("Ariel",Font.PLAIN,22));
+                    title.setHorizontalAlignment(SwingConstants.CENTER);
+                    popupMenu.add(title,BorderLayout.NORTH);
+                    
                     close.addActionListener(new ActionListener() {
                         private int secs = 0;
                         private int seconds = 0;
@@ -203,10 +213,12 @@ public final class MineGrid extends JFrame implements ActionListener {
                         }
 
                     });
-                    JTextArea area = new JTextArea();
-                    area.append(arr.toString());
+                    
+                    arr.forEach(line -> flow.add(new JLabel(line+('s'))));
+                    
+                   // area.append(arr.toString());
                     popupMenu.add(close, BorderLayout.SOUTH);
-                    popupMenu.add(area, BorderLayout.CENTER);
+                  
                     popupMenu.setVisible(true);
 
                 } catch (HeadlessException ex) {
