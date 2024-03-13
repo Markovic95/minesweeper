@@ -254,6 +254,7 @@ public final class MineGrid extends JFrame implements ActionListener {
         ArrayList<Integer> bestscoresEasy = new ArrayList<>();
         ArrayList<Integer> bestscoresMedium = new ArrayList<>();
         ArrayList<Integer> bestscoresHard = new ArrayList<>();
+        ArrayList<Integer> bestscoresExtreme = new ArrayList<>();
         ArrayList<String> finalistScore = new ArrayList<>();
 
         try {
@@ -283,6 +284,11 @@ public final class MineGrid extends JFrame implements ActionListener {
                         Collections.sort(bestscoresHard);
                         bestscoresHard.get(0);
                     }
+                    else if (parts[0].equalsIgnoreCase("Extreme")) {
+                        bestscoresExtreme.add(Integer.valueOf(parts[2]));
+                        Collections.sort(bestscoresExtreme);
+                        bestscoresExtreme.get(0);
+                    }
 
                 } else if (li == null) {
 
@@ -303,6 +309,10 @@ public final class MineGrid extends JFrame implements ActionListener {
                 if (bestscoresHard.size() != 0) {
 
                     finalistScore.add("Hard:" + bestscoresHard.get(0).toString());
+                }
+                if (bestscoresExtreme.size() != 0) {
+
+                    finalistScore.add("Extreme:" + bestscoresExtreme.get(0).toString());
                 }
             } catch (Exception e) {
                 // TODO: handle exception

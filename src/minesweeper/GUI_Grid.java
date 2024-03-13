@@ -450,6 +450,12 @@ final class GUI_Grid extends JPanel {
             highScores(dif, name, min);
 
         }
+        if (y == 30 && x==24) {
+            min += min + secs;
+            String dif = "Extreme";
+            highScores(dif, name, min);
+
+        }
         System.out.print("##########################\n"
                 + "YOU ARE THE WINNER\n"
                 + "##########################\n");

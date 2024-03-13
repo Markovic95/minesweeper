@@ -19,6 +19,7 @@ public class StartMenu extends JFrame {
 	    private JButton b2; //button of 16x16 grid
 	    private JButton b; //button of 9x9 grid
 	    private JButton b3; //buutton of 30x16
+		private JButton b4; //buutton of 30x24
 	    
 	    private JPanel input,defaultvaluespanel,toppanel,southpanel,subsouthpanel; //panels for choices of the game
 	    
@@ -52,13 +53,18 @@ public class StartMenu extends JFrame {
 		        
 		        b3 = new JButton(" 16x30 99 Mines");
 		        b3.addActionListener(new StartGameAction(this, new MineGrid(16, 30,99)));
-		        toppanel.add(input,BorderLayout.NORTH);
+				
+				b4 = new JButton(" 24x30 200 Mines");
+		        b4.addActionListener(new StartGameAction(this, new MineGrid(24, 30,200)));
+		        
+				toppanel.add(input,BorderLayout.NORTH);
                 input.add(startlabel,RIGHT_ALIGNMENT);
                 toppanel.add(southpanel,BorderLayout.SOUTH);
                 southpanel.add(defaultvaluespanel,BorderLayout.SOUTH);
 		        defaultvaluespanel.add(b);
 		        defaultvaluespanel.add(b2);
 		        defaultvaluespanel.add(b3);
+				defaultvaluespanel.add(b4);
                 southpanel.add(subsouthpanel,BorderLayout.NORTH);
                 subsouthpanel.add(defaultlabel);
                 add(toppanel);

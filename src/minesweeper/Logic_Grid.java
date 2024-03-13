@@ -5,7 +5,10 @@
 package minesweeper;
 
 import java.awt.Image;
+import java.util.HashSet;
 import java.util.Random;
+import java.util.Set;
+
 import javax.swing.ImageIcon;
 
 
@@ -123,12 +126,13 @@ public final class Logic_Grid {
         
 		logic_grid = new char[this.height][this.width];
 
-		int[] mineIndexes = new Random().ints(0, (this.width*this.height-1)).limit(mineCount).distinct().toArray();
+		//int[] mineIndexes = new Random().ints(0, (this.width*this.height-1)).limit(mineCount).distinct().toArray();
 		 
-		for (int i=0; i<mineIndexes.length; i++) {
+		/*for (int i=0; i<mineIndexes.length; i++) {
 			this.logic_grid[Math.floorDiv(mineIndexes[i], this.width)][mineIndexes[i] % this.width] = this.mine;
                         
-		}
+		}*/
+		 generateMines();
                 
 		for (int i=0; i<this.logic_grid.length; i++) {
 			for (int j=0; j<this.logic_grid[0].length; j++) {
@@ -146,6 +150,21 @@ public final class Logic_Grid {
 		}
                
 	}
+	private void generateMines() {
+        Set<Integer> uniqueMineIndexes = new HashSet<>();
+        Random random = new Random();
+
+        while (uniqueMineIndexes.size() < mineCount) {
+            int randomIndex = random.nextInt(width * height);
+            uniqueMineIndexes.add(randomIndex);
+        }
+
+        for (int mineIndex : uniqueMineIndexes) {
+            int row = mineIndex / width;
+            int col = mineIndex % width;
+            logic_grid[row][col] = this.mine;
+        }
+    }
 	
     /**
      * Checks if @param row,col are within the bounds of the board 
