@@ -50,7 +50,7 @@ public class StartMenu extends JFrame {
                 b2 = new JButton(" 16x16 30 Mines");
 		        b2.addActionListener(new StartGameAction(this, new MineGrid(16, 16,30)));
 		        
-		        b3 = new JButton(" 30x16 99 Mines");
+		        b3 = new JButton(" 16x30 99 Mines");
 		        b3.addActionListener(new StartGameAction(this, new MineGrid(16, 30,99)));
 		        toppanel.add(input,BorderLayout.NORTH);
                 input.add(startlabel,RIGHT_ALIGNMENT);

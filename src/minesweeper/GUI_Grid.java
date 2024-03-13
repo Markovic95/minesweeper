@@ -432,19 +432,19 @@ final class GUI_Grid extends JPanel {
         JFrame f = new JFrame();
         String name = JOptionPane.showInputDialog(f, "Enter Name");
 
-        if (x == 9) {
+        if (x == 9 && y == 9) {
             min += min + secs;
             String dif = "Easy";
             highScores(dif, name, min);
 
         }
-        if (x == 16) {
+        if (x == 16 && y == 16) {
             min += min + secs;
             String dif = "Medium";
             highScores(dif, name, min);
 
         }
-        if (x == 30) {
+        if (y == 30 && x==16) {
             min += min + secs;
             String dif = "Hard";
             highScores(dif, name, min);
