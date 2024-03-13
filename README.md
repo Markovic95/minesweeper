@@ -4,6 +4,9 @@
   * 16 x 16 : 30 bombs
   * 30 x 16 : 99 bombs
   * 30 x 24 : 200 bombs
+## Games's Logic
+In each round player has 3 lives points, on each bomb encounter life goes down by -1 and the player loses the round if left without lives
+   * first 2 bombs clicks are marked with a warning yellow color , 3rd click is marked with color red and the users loses the round
 
 ## DEMO
 ### 10 x 10
