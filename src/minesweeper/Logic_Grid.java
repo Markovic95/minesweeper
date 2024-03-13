@@ -126,12 +126,16 @@ public final class Logic_Grid {
         
 		logic_grid = new char[this.height][this.width];
 
-		//int[] mineIndexes = new Random().ints(0, (this.width*this.height-1)).limit(mineCount).distinct().toArray();
+		/*int[] mineIndexes = new Random().ints(0, (this.width*this.height-1)).limit(mineCount).distinct().toArray();
 		 
-		/*for (int i=0; i<mineIndexes.length; i++) {
+		for (int i=0; i<mineIndexes.length; i++) {
 			this.logic_grid[Math.floorDiv(mineIndexes[i], this.width)][mineIndexes[i] % this.width] = this.mine;
                         
 		}*/
+
+		/**
+		 * Same functionality as the code above, with more even distribution of the mine indexes across the board - de-clustering the indexes created from Random() & the distinct()
+		 */
 		 generateMines();
                 
 		for (int i=0; i<this.logic_grid.length; i++) {
