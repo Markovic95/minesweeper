@@ -6,4 +6,4 @@
   * 30 x 24 : 200 bombs
 
 ## DEMO
-![Alt text](https://github.com/Markovic95/minesweeper/tree/master/screenshots/16by16.png)
+![Alt image](https://github.com/Markovic95/minesweeper/tree/master/screenshots/16by16.png)
