@@ -19,3 +19,7 @@
 ![first_demo](https://github.com/Markovic95/minesweeper/assets/62838385/f8e98745-c2cd-40aa-b365-4b7499c88dff)
 #
 ![second_demo](https://github.com/Markovic95/minesweeper/assets/62838385/f22ad7ed-25cb-4ee6-b799-8967730a5e4c)
+#
+![third_demo](https://github.com/Markovic95/minesweeper/assets/62838385/f5620e39-d4e9-4860-87ee-18af76117c50)
+
+
