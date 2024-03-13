@@ -7,7 +7,7 @@
 ## Games's Logic
 In each round player has 3 lives points, on each bomb encounter life goes down by -1 and the player loses the round if left without lives
    * first 2 bombs clicks are marked with a warning yellow color , 3rd click is marked with color red and the users loses the round
-
+   * The game keeps the score (best time in seconds) of each difficulty in the highScores.txt file, HighScores can be viewed from the Scores button once the game has started.
 ## DEMO
 ### 10 x 10
 ![tenbyten](https://github.com/Markovic95/minesweeper/assets/62838385/669cd962-2c8b-4b5d-a6e9-d77a51bb8539)
