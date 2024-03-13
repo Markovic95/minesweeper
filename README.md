@@ -1,1 +1,7 @@
-### A simple minesweeper game with 4 modes of difficulty
+# Classic minesweeper game 
+### 4(modes) of difficulty
+  * 10 x 10 : 10 bombs
+  * 16 x 16 : 30 bombs
+  * 30 x 16 : 99 bombs
+  * 30 x 24 : 200 bombs
+
