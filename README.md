@@ -6,7 +6,7 @@
   * 30 x 24 : 200 bombs
 
 ## DEMO
-# 10 x 10
+### 10 x 10
 ![tenbyten](https://github.com/Markovic95/minesweeper/assets/62838385/669cd962-2c8b-4b5d-a6e9-d77a51bb8539)
 # 16 x 16
 ![16by16](https://github.com/Markovic95/minesweeper/assets/62838385/46d78b62-c58d-435a-a4ed-f15110eb530f)
