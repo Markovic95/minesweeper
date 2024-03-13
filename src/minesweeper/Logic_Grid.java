@@ -135,6 +135,8 @@ public final class Logic_Grid {
 
 		/**
 		 * Same functionality as the code above, with more even distribution of the mine indexes across the board - de-clustering the indexes created from Random() & the distinct()
+		 * specificaly the distinct() call creates less mines than stated in game's logic due to the fact that their may be a duplicate value but the distinct() call removes it with out 
+		 * re-calculating the index lost, thus game's logic is violated
 		 */
 		 generateMines();
                 
