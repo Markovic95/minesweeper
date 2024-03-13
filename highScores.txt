@@ -13,3 +13,8 @@ Easy:dalibor:15
 Easy:dalibor:23
 Easy:dali:47
 Easy:kwstas:22
+Easy:dalibor:18
+Medium:dalibor:102
+Medium:papadakis:415
+Easy:null:30
+Easy:null:24
