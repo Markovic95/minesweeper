@@ -15,7 +15,7 @@
 # 30 x 24
 ![30by24](https://github.com/Markovic95/minesweeper/assets/62838385/be29350c-c44c-45a6-aee2-a45bc29a2390)
 
-#Game Play
+# Game Play
 ![first_demo](https://github.com/Markovic95/minesweeper/assets/62838385/f8e98745-c2cd-40aa-b365-4b7499c88dff)
 #
 ![second_demo](https://github.com/Markovic95/minesweeper/assets/62838385/f22ad7ed-25cb-4ee6-b799-8967730a5e4c)
