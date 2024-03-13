@@ -1,6 +1,5 @@
 Easy:dalibor:23
 Medium:kwstas:141
-Hard:markovvic:8
 Easy:awdawd:26
 Easy:adw:27
 Easy:dalibor:18
