@@ -18,3 +18,8 @@ Medium:dalibor:102
 Medium:papadakis:415
 Easy:null:30
 Easy:null:24
+Medium:dalibor:117
+Easy:dalibor:16
+Easy:dali:37
+Easy:null:28
+Easy:null:21
