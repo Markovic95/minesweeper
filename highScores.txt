@@ -20,3 +20,4 @@ Easy:null:30
 Easy:null:24
 Medium:dalibor:92
 Easy:dalibor:14
+Medium::100
